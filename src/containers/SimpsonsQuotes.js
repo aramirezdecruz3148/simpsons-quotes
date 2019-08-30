@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Quotes from '../components/quotes/Quotes';
+import { getQuotes, getQuotesLoading } from '../selectors/simpsonsSelectors';
+import { fetchQuotes } from '../actions/simpsonsActions';
 
 class SimpsonsQuotes extends Component {
   static propTypes = {
@@ -22,10 +24,18 @@ class SimpsonsQuotes extends Component {
   }
 }
 
-// const mapStateToProps = state => ({
+const mapStateToProps = state => ({
+  quotes: getQuotes(state),
+  loading: getQuotesLoading(state)
+});
 
-// });
+const mapDispatchToProps = dispatch => ({
+  fetch() {
+    dispatch(fetchQuotes());
+  }
+});
 
-// const mapDispatchToProps = dispatch => ({
-
-// });
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(SimpsonsQuotes);
