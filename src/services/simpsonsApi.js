@@ -8,7 +8,7 @@ export const getQuotes = (count = 5) => {
     .then(quotes => {
       return quotes.map(quote => ({
         quote: quote.quote,
-        image: quote.image,
+        characterImage: quote.image,
         characterName: quote.character
       }));
     });
