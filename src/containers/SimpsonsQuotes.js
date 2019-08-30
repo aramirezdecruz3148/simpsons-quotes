@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Quotes from '../components/quotes/Quotes';
-import { getQuotes, getQuotesLoading } from '../selectors/simpsonsSelectors';
+import { getCharacterQuotes, getQuotesLoading } from '../selectors/simpsonsSelectors';
 import { fetchQuotes } from '../actions/simpsonsActions';
 
 class SimpsonsQuotes extends Component {
@@ -25,7 +25,7 @@ class SimpsonsQuotes extends Component {
 }
 
 const mapStateToProps = state => ({
-  quotes: getQuotes(state),
+  quotes: getCharacterQuotes(state),
   loading: getQuotesLoading(state)
 });
 
