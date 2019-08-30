@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Load({ handleOnClick }) {
   return (
-    <button onClick={handleOnClick}></button>
+    <button onClick={handleOnClick}>Load More Quotes</button>
   );
 }
 

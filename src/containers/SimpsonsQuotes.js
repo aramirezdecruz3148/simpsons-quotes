@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Quotes from '../components/quotes/Quotes';
 import { getCharacterQuotes, getQuotesLoading } from '../selectors/simpsonsSelectors';
 import { fetchQuotes } from '../actions/simpsonsActions';
+import Load from '../components/quotes/Load';
 
 class SimpsonsQuotes extends Component {
   static propTypes = {
@@ -20,7 +21,12 @@ class SimpsonsQuotes extends Component {
     const { quotes, loading } = this.props;
     if(loading) return <h1>LOADING</h1>;
 
-    return <Quotes quotes={quotes} />;
+    return (
+      <>
+        <Load handleOnClick={this.props.fetch} />
+        <Quotes quotes={quotes} />;
+      </>
+    );
   }
 }
 
