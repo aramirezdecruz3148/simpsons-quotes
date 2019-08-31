@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Scope+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+
+.section {
+  height: 30vw;
+  width: 40vw;
+  text-align: center;
+  margin: 0 3vw 3vw 0;
+  padding-top: 3vw;
+  border: .2vw solid black;
+  border-radius: 10%;
+  font-size: 1.4vw;
+  font-weight: bolder;
+  overflow: scroll;
+  padding: 2vw;
+}
+
+.section img {
+  width: 9vw;
+  margin-bottom: 1vw;
+}
+
+.section h3 {
+  font-family: 'Luckiest Guy', cursive;
+  color: #FFD90F;
+  font-size: 2.8vw;
+  text-shadow:
+		-.2vw -.2vw 0 #000,
+		.2vw -.2vw 0 #000,
+		-.2vw .2vw 0 #000,
+		.2vw .2vw 0 #000;
+}
+
+.section p {
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+  font-family: 'Scope One', serif;
+  font-size: 1.5vw;
+}
+
+.section p:before {
+  content: open-quote;
+}
+.section p:after {
+  content: close-quote;
+}

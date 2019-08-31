@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Load component renders Load 1`] = `
+<div
+  className="center"
+>
+  <div
+    className="container"
+  >
+    <h3
+      onClick={[Function]}
+    >
+      Load More Characters
+    </h3>
+    <img
+      onClick={[Function]}
+      src="/path/image"
+    />
+  </div>
+</div>
+`;
