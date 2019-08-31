@@ -16,7 +16,7 @@ export const withQuotes = (Component, Loader = Load) => {
 
     render() {
       const { loading } = this.props;
-      if(loading) return <><iframe src="https://giphy.com/embed/ISjYZh2up6Pn2" width="480" height="480" frameBorder="0"  allowFullScreen></iframe></>;
+      if(loading) return <div style={{ display: 'flex', justifyContent: 'center' }}><iframe src="https://giphy.com/embed/ISjYZh2up6Pn2" width="480" height="480" frameBorder="0"  allowFullScreen></iframe></div>;
 
       return (
         <>
