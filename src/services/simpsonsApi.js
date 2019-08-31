@@ -1,5 +1,4 @@
-export const getQuotes = (count = 5) => {
-  console.log('what up');
+export const getQuotes = (count = 10) => {
   return fetch(`https://thesimpsonsquoteapi.glitch.me/quotes?count=${count}`)
     .then(res => {
       if(!res.ok) throw 'Unable to retrieve quote';
@@ -7,7 +6,6 @@ export const getQuotes = (count = 5) => {
       return res.json();
     })
     .then(quotes => {
-      console.log('HEY', quotes);
       return quotes.map(quote => ({
         quote: quote.quote,
         characterImage: quote.image,
