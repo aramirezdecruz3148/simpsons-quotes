@@ -1,19 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
 
-button {
-  background: #FFD90F;
-  width: 20vw;
-  height: 10vw;
-  font-family: 'Nothing You Could Do', cursive;
+.center h3 {
+  font-family: 'Luckiest Guy', cursive;
   font-size: 3vw;
   font-weight: bolder;
-  border-radius: 10%;
-  border: .1vw black solid;
+  color: #FFD90F;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -1vw;
+  text-shadow:
+		-.2vw -.2vw 0 #000,
+		.2vw -.2vw 0 #000,
+		-.2vw .2vw 0 #000,
+		.2vw .2vw 0 #000;
 }
 
-button:hover {
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.center img {
+  width: 25vw;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.container:hover {
   transform: scale(1.2);
-  background: rgb(199, 179, 63);
-  color: white;
 }
-

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Quote from './Quote';
+import './Quotes.css';
 
 function Quotes({ quotes }) {
   const quoteList = quotes.map(({ characterImage, characterName, quote }) => (
